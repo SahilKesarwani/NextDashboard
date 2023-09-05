@@ -1,0 +1,45 @@
+.left-side {
+	display: none;
+}
+
+@media screen and (min-width: 992px) {
+	.left-side {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		color: #fff;
+		padding: 60px;
+		background: linear-gradient(180deg, #4285f4 0%, #286de0 100%);
+		width: 50vw;
+		height: 100vh;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 0;
+			height: 0;
+			border-bottom: 100vh solid #fff;
+			border-left: 12.5vh solid transparent;
+		}
+
+		.title {
+			font-size: 72px;
+			align-self: center;
+			margin-left: -6vh;
+		}
+
+		.socials {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 4vh;
+			align-self: center;
+			margin-left: -6vh;
+		}
+	}
+}
