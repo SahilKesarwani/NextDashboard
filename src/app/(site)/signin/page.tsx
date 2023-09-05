@@ -4,7 +4,7 @@ import Link from "next/link";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { LeftSide, ProviderButton } from "@/components";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/utils/authOptions";
 
 const lato = Lato({ weight: "400", subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
